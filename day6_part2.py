@@ -1,3 +1,4 @@
+# TODO - Optimize this. Currently ends with a memory error. Pypy is faster, but still.
 def sim_fish(list, days):
     while True:
         index = 0

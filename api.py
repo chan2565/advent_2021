@@ -21,7 +21,7 @@ def init(day):
     part2_file = f"day{day}_part2.py"
     ex_file = f"day{day}_ex_input.txt"
 
-    starter_txt = f'\n\n\n\nif __name__ == "__main__":\n    #with open("day6_input.txt") as file:\n    #    lines = file.readlines()\n\n    with open("day6_ex_input.txt") as file:\n        lines = file.readlines()'
+    starter_txt = f'\n\n\n\nif __name__ == "__main__":\n    #with open("day{day}_input.txt") as file:\n    #    lines = file.readlines()\n\n    with open("day{day}_ex_input.txt") as file:\n        lines = file.readlines()'
 
     with open(part1_file, mode="w") as file:
         file.write(starter_txt)
