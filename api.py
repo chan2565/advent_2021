@@ -15,6 +15,21 @@ def get_input(day):
         file.write(req.text)
     return file_name
 
+# Creates the rest of the initial files needed for the day
+def init(day):
+    part1_file = f"day{day}_part1.py"
+    part2_file = f"day{day}_part2.py"
+    ex_file = f"day{day}_ex_input.txt"
+
+    starter_txt = f'\n\n\n\nif __name__ == "__main__":\n    #with open("day6_input.txt") as file:\n    #    lines = file.readlines()\n\n    with open("day6_ex_input.txt") as file:\n        lines = file.readlines()'
+
+    with open(part1_file, mode="w") as file:
+        file.write(starter_txt)
+    with open(part2_file, mode="w") as file:
+        file.write(starter_txt)
+    with open(ex_file, mode="w") as file:
+        file.write("")
+
 # Submits your answer and prints a short message if it's right or wrong.
 # Also returns the response object for debugging, etc.
 def submit_answer(day, part, answer):
